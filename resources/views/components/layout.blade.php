@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>example</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/js/app.js'])
 </head>
 <body class="h-full">
    <div class="min-h-full">
@@ -20,7 +20,7 @@
               <div class="ml-10 flex items-baseline space-x-4">
                 <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                 <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
-                <x-nav-link href="/contacts" :active="request()->is('contacts')" type="button">Contacts</x-nav-link>
+                <x-nav-link href="/contact" :active="request()->is('contact')" type="button">Contact</x-nav-link>
               </div>
             </div>
           </div>
